@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <script type="text/javascript" src="lib/jquery-1.10.2.js"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="back">
+      <div class="pad shape1" data-pad="1">
+        <audio preload="auto" class="sound1" id="audio1">
+          <source src="sounds/mp3/sounds_01.mp3" type="audio/mpeg" />
+          <source src="sounds/ogg/sounds_01.ogg" type="audio/ogg" />
+        </audio>
+      </div>
+      <div class="pad shape2" data-pad="2">
+        <audio preload="auto" class="sound2" id="audio2">
+          <source src="sounds/mp3/sounds_02.mp3" type="audio/mpeg" />
+          <source src="sounds/ogg/sounds_02.ogg" type="audio/ogg" />
+        </audio>
+      </div>
+      <div class="pad shape3" data-pad="3">
+        <audio preload="auto" class="sound3" id="audio3">
+          <source src="sounds/mp3/sounds_03.mp3" type="audio/mpeg" />
+          <source src="sounds/ogg/sounds_03.ogg" type="audio/ogg" />
+        </audio>
+      </div>
+      <div class="pad shape4" data-pad="4">
+        <audio preload="auto" class="sound4" id="audio4">
+          <source src="sounds/mp3/sounds_04.mp3" type="audio/mpeg" />
+          <source src="sounds/ogg/sounds_04.ogg" type="audio/ogg" />
+        </audio>
+      </div>
+      <div class="circle"></div>
+    </div>
+
+    <div class="level">
+      <h2>Level: 1</h2>
+    </div>
+    <div class="score">
+      <h2>Score: 0</h2>
+    </div>
+    <div class="sButton">
+      <button class="start">start</button>
+    </div>
+  </div>
+
+  <script>
+    var audio1 = document.getElementById("audio1");
+    audio1.volume = 0.2
+
+    var audio2 = document.getElementById("audio2");
+    audio2.volume = 0.2
+
+    var audio3 = document.getElementById("audio3");
+    audio3.volume = 0.2
+
+    var audio4 = document.getElementById("audio4");
+    audio4.volume = 0.2
+  </script>
+</body>
+
+</html>
