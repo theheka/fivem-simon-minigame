@@ -15,16 +15,16 @@ TriggerEvent('theheka:startSimonGame', targetLvl, speed, outputEvent)
 
 `speed` - Defaults to `0.5` if nil value is given. Allowed values are:
 ```
-Insane - 0.25
-Hard - 0.5   DEFAULT
-Normal 1
-Easy 2
+0.25 - Insane
+0.5 - Hard  [DEFAULT]
+1 - Normal
+2 - Easy
 ```
 
 `outputEvent` - a client event name that will be triggered when the game has been finished. 
 
 
-### Example
+### Example:
 ```
 # Client
 
@@ -36,7 +36,7 @@ AddEventHandler('theheka:simonResult', function (success)
   print(success)
 end)
 ```
-The following snippet will register a command `/simonsays`. This command will trigger an event that will start the simon says -mini game. Target level is set to 5 and default speed is set to `0.5`. After every game client event `theheka:simonResult` will be triggered and boolean value returned. If player reaches target level (5) `true` value will be returned otherwise the value is `false`.
+The following snippet will register a command `/simonsays`. This command will trigger an event that will start the simon says -mini game. Target level is set to 5 and the speed is set to `0.5`. After every game a client event `theheka:simonResult` will be triggered and boolean value returned. If player reaches target level (5) `true` value will be returned otherwise the value is `false`.
 
 Link to demo: [GIF](https://i.gyazo.com/053b3cac5cca223e55e741b9c419b63d.mp4)
 
