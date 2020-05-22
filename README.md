@@ -38,6 +38,7 @@ end)
 ```
 The following snippet will register a command `/simonsays`. This command will trigger an event that will start the simon says -mini game. Target level is set to 5 and default speed is set to `0.5`. After every game client event `theheka:simonResult` will be triggered and boolean value returned. If player reaches target level (5) `true` value will be returned otherwise the value is `false`.
 
+Link to demo: [GIF](https://i.gyazo.com/053b3cac5cca223e55e741b9c419b63d.mp4)
 
 ## Install
 Download repository and copy-paste `./simon_minigame` to your `resources/` -directory. Make sure to start/ensure simon_minigame in your server.cfg -file
